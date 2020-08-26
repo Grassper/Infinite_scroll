@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: cadetblue;
+    color: white;
+    font-family: 'Overlock', cursive;
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    margin-top:25px;
+    margin-bottom: 15px;
+}
+
+.loader{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(255,255,255, 0.5);
+}
+
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.image_container{
+    width: 80%;
+    margin: 10px auto;
+    columns: 4;
+    column-gap: 40px;
+}
+
+.image_container img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-top:10px;
+}
+
+/* media quries */
+@media screen and (max-width: 1200px){
+    .image_container{
+        columns: 3
+    }
+}
+
+@media screen and (max-width: 768px){
+    .image_container{
+        columns: 2
+    }
+}
+
+@media screen and (max-width: 480px){
+    .image_container{
+        columns: 1
+    }
+}
+
+
